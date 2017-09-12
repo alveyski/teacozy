@@ -1,17 +1,27 @@
-header {
-  color: white;
+body {
+  margin: 0px;
   background-color: black;
-  height: 100px;
+  color: seashell;
+  font-size: 22px;
+  font-family: Helvetica;
+  opacity: .9;
+}
+
+header {
+  background-color: black;
+  height: 69px;
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid white;
-  font-size: 40px;
+  border-bottom: 1px solid seashell;
+  font-size: 30px;
 }
 
 header img {
+  height: 50px;
+  width: auto;
   display: inline-flex;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 nav {
@@ -25,4 +35,37 @@ nav {
 nav span a {
   color: white;
   padding: 0px 20px;
+}
+
+#main {
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+}
+
+#main img {
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+#maintextbox {
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#maintextbox h2 {
+  height: 5px;
+}
+
+#maintop {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
